@@ -1,0 +1,9 @@
+# DOCUMENTATION
+ `If{
+	 ...
+}else if{
+
+	...
+}else{
+	...
+}
