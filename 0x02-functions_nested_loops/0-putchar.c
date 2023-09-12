@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
 * main - entry point
 *
@@ -7,13 +8,14 @@
 
 int main(void)
 {
-	const char *a = "_putchar";
+	char a[] = "_putchar";
 
 	int num;
-	for (num = 0; num != '\0'; num++)
+
+	for (num = 0; num < 8; num++)
 	{
-		putchar(a[num]);
-		putchar('\n');
+		_putchar(a[num]);
 	}
+	_putchar('\n');
 	return (0);
 }
