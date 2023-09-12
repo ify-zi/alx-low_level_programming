@@ -1,1 +1,7 @@
-#include <stdio.h>
+
+
+/**
+* declaring variables
+*/
+
+int _putchar(char c);
