@@ -7,7 +7,13 @@
 * Return: 0
 */
 
-int print_last_digit(unsigned int n)
+int print_last_digit(int n)
 {
-	return (n % 10);
+	m = n % 10;
+	if (n < 0)
+	{
+		ld = -m;
+		return (ld)(ld);
+	}
+	return (m)(m);
 }
