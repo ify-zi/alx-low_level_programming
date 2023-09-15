@@ -31,6 +31,10 @@ int main(void)
 		{
 			printf("%d ", a);
 		}
+		if (a != 0)
+		{
+			printf(" ");
+		}
 	}
 	printf("\n");
 	return (0);
