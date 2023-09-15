@@ -1,28 +1,38 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int _putchar(char c);
 
 /**
-* print_number - prints intger
-* @n: operand
-*
-* Return: Void
-*/
+ * print_number - like a hello world
+ *
+ * @n: params an integer
+ *
+ * No return
+ */
+
 
 void print_number(int n)
 {
-	if (n < 0)
+
+	unsigned int n1 = 0;
+
+	if  (n < 0)
 	{
+		n1 = -n;
 		_putchar('-');
-		n = -n;
 	}
-    
-	if (n == 0)
+
+	else
 	{
-		_putchar('0');
-		return;
+		n1 = n;
 	}
-	if (n / 10 != 0)
+
+	if (n1 / 10)
 	{
-		print_number(n / 10);
+		print_number(n1 / 10);
 	}
-	 _putchar((n % 10) + '0');
+
+	_putchar((n1 % 10) + '0');
 }
