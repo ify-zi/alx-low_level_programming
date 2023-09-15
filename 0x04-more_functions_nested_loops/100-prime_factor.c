@@ -12,11 +12,11 @@ int main(void)
 	long int i = 612852475143;
 	long int a;
 
-	for (a = 2; a < x; a++)
+	for (a = 2; a < i; a++)
 	{
-		if (x % a == 0)
+		if (i % a == 0)
 		{
-			x = x / a;
+			i = i / a;
 		}
 	}
 	printf("%ld\n", a);
