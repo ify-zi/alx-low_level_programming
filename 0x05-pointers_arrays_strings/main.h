@@ -9,5 +9,6 @@ extern void _puts(char *str);
 extern void print_rev(char *s);
 extern void rev_string(char *s);
 extern void puts2(char *str);
+extern void puts_half(char *str);
 
 #endif
