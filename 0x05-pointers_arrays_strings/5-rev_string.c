@@ -10,25 +10,16 @@
 void rev_string(char *s)
 {
 	int len = strlen(s);
-	int a;
+	char *a = s;
+	char *b = s + len - 1;
 
-	for (a = len - 1; a < len; a--)
+	while (a < b)
 	{
-		if (a >= 0)
-		{
-			if (s[a] != '\0')
-			{
-				printf("%c", s[a]);
-			}
-			else
-			{
-				continue;
-			}
-		}
-		else
-		{
-			break;
-		}
+		char tmp = *a;
+		*a = *b;
+		*b = tmp;
+
+		a++;
+		b--;
 	}
-	printf("\n");
 }
