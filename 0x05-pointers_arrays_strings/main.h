@@ -7,5 +7,6 @@ extern void swap_int(int *a, int *b);
 extern int _strlen(char *s);
 extern void _puts(char *str);
 extern void print_rev(char *s);
+extern void rev_string(char *s);
 
 #endif
