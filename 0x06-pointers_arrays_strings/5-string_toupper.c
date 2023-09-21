@@ -15,6 +15,8 @@ char *string_toupper(char *s)
 
 	for (i = 0; i < len; i++)
 	{
+		if (s[i] == '\0' || s[i] == ' ')
+			continue;
 		s[i] = toupper(s[i]);
 	}
 	return (s);
