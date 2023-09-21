@@ -12,23 +12,30 @@
 char *cap_string(char *s)
 {
 	int i;
-	int len = strlen(s) - 1;
 
-	for (i = 0; i <= len; i++)
+	i = 0;
+	while (s[i] != '\0')
 	{
-		if (s[i - 1] == 10 || s[i - 1] == 9 || s[i - 1] == 123 
-				|| s[i - 1] == 125
-				|| (s[i - 1] >= 32 && s[i - 1] <= 64))
+		if ((s[i - 1] == ' ' || s[i - 1] == '\n'
+		|| s[i - 1] == '\t' || s[i - 1] == ','
+		|| s[i - 1] == ';' || s[i - 1] == '!'
+		|| s[i - 1] == '?' || s[i - 1] == '"'
+		|| s[i - 1] == '(' || s[i - 1] == ')'
+		|| s[i - 1] == '{' || s[i - 1] == '}'
+		|| s[i - 1] == '.')
+		&& (s[i] >= 'a' && s[i] <= 'z'))
 		{
-			if (!(isdigit(s[i - 1])))
-			{
-				if (isalpha(s[i]) && islower(s[i]))
-				{
-					s[i] = toupper(s[i]);
-				}
-			}
-			continue;
+			s[i] = s[i] - 32;
 		}
+		else if ((s[0] >= 97 && s[0] <= 122))
+		{
+			s[0] = s[0] - 32;
+		}
+		else
+		{
+			s[i] = s[i];
+		}
+		i++;
 	}
 	return (s);
 }
