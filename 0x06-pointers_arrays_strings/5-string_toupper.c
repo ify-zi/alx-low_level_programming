@@ -13,7 +13,7 @@ char *string_toupper(char *s)
 	int i;
 	int len = strlen(s) - 1;
 
-	for (i = 0; i < len; i++)
+	for (i = 0; i <= len; i++)
 	{
 		if (s[i] == '\0' || (s[i] >= 32 && s[i] <= 64))
 			continue;
