@@ -18,11 +18,11 @@ char *cap_string(char *s)
 	{
 		if (s[i - 1] == 10 || s[i - 1] == 9 || s[i - 1] == 123 
 				|| s[i - 1] == 125
-				|| (s[i] >= 32 && s[i] <= 64))
+				|| (s[i - 1] >= 32 && s[i - 1] <= 64))
 		{
 			if (!(isdigit(s[i - 1])))
 			{
-				if (isalpha(s[i]))
+				if (isalpha(s[i]) && islower(s[i]))
 				{
 					s[i] = toupper(s[i]);
 				}
