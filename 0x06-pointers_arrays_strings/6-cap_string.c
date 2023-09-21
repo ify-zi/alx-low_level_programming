@@ -16,14 +16,15 @@ char *cap_string(char *s)
 
 	for (i = 0; i <= len; i++)
 	{
-		if (s[i] == 10 || s[i] == 9 || s[i] == 123 || s[i] == 125
+		if (s[i - 1] == 10 || s[i - 1] == 9 || s[i - 1] == 123 
+				|| s[i - 1] == 125
 				|| (s[i] >= 32 && s[i] <= 64))
 		{
-			if (!(isdigit(s[i])))
+			if (!(isdigit(s[i - 1])))
 			{
-				if (isalpha(s[i + 1]))
+				if (isalpha(s[i]))
 				{
-					s[i + 1] = toupper(s[i + 1]);
+					s[i] = toupper(s[i]);
 				}
 			}
 			continue;
