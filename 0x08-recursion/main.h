@@ -11,5 +11,6 @@ extern int _sqrt_recursion(int n);
 extern int _sqrt(int n, int i);
 extern int is_prime_number(int n);
 extern int _prime(int n, int k);
+extern int is_palindrome(char *s);
 
 #endif
