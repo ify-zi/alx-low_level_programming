@@ -19,7 +19,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	s = (char *)malloc(sizeof(str) * (len + 1));
+	s = (char *)malloc(sizeof(str) * len);
 
 	if (s == NULL)
 	{
