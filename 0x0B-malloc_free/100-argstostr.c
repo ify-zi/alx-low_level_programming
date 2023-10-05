@@ -20,7 +20,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	lst = (char *)malloc(sizeof(char) * ac);
+	lst = (char *)malloc(sizeof(char *) * ac);
 
 	if (lst == NULL)
 	{
@@ -29,7 +29,7 @@ char *argstostr(int ac, char **av)
 	}
 	lst[0] = '\0';
 
-	for (i = 1; av[i] != NULL; i++)
+	for (i = 0; av[i] != NULL; i++)
 	{
 		strcat(lst, av[i]);
 		strcat(lst, "\n");
