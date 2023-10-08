@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 				for (i = 0; i < 5; i++)
 					_putchar(msg[i]);
 				_putchar('\n');
-				exit(98); 
+				exit(98);
 			}
 		}
 	}
