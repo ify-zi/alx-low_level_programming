@@ -9,9 +9,9 @@
 * @n: count of int
 */
 
-void print_numbers(const char *separator, const int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int i;
+	unsigned int i;
 	va_list args;
 
 	va_start(args, n);
@@ -21,7 +21,7 @@ void print_numbers(const char *separator, const int n, ...)
 		;
 	}
 	for (i = 0; i < n; i++)
-		printf("%d%s", va_arg(args, int), separator);
+		printf("%d%s", va_arg(args , int), separator);
 
 	printf("\n");
 	va_end(args);
