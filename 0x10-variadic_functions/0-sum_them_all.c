@@ -12,7 +12,7 @@ int sum_them_all(const int n, ...)
 {
 	int i, sum, num;
 	va_list args;
-	
+
 	va_start(args, n);
 
 	if (n == 0)
