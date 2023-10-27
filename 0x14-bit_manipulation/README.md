@@ -1,0 +1,2 @@
+# ABOUT PROJECT
+`bit manipulation`
