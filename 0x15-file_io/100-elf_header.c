@@ -1,5 +1,10 @@
 #include "main.h"
 
+/*
+ * File: 100-elf_header.c
+ * Author: Ifeanyi Zion Chidiebere
+ */
+
 /**
  * check_elf - Checks if a file is an ELF file.
  * @e_ident: A pointer to an array containing the ELF magic numbers.
