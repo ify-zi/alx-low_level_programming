@@ -19,8 +19,6 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (fd < 0)
 		return (-1);
 
-	num = strlen(text_content) - 1;
-
 	if (text_content)
 	{
 		while (text_content[num])
