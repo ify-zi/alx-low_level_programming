@@ -30,7 +30,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 		free(new_tab);
 		return (NULL);
 	}
-	
+
 	for (i = 0; i < size; i++)
 	{
 		new_tab->array[i] = NULL;
