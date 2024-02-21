@@ -17,5 +17,4 @@ oclean:
 fclean:
 	${RM} -f *.swp *~ *.o ${NAME}
  
-re:
-	${CC} ${SRC} -o ${NAME}
+re: fclean all
