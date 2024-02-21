@@ -9,13 +9,13 @@ all:${OBJ}
 	${CC} ${OBJ} -o ${NAME}
  
 clean:
-	${RM} *.swp *~ ${NAME}
+	${RM} -f *.swp *~ ${NAME}
  
 oclean:
-	${RM} *.o
+	${RM} -f *.o
  
 fclean:
-	${RM} *.swp *~ *.o ${NAME}
+	${RM} -f *.swp *~ *.o ${NAME}
  
 re:
 	${CC} ${SRC} -o ${NAME}
